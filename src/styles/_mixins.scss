@@ -1,0 +1,6 @@
+@mixin header-font() {
+    font-family: $header-font;
+    color: $main-color;
+    font-size: $large*2;
+
+}
