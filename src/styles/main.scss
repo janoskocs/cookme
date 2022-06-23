@@ -6,6 +6,121 @@
 @import 'variables';
 @import 'mixins';
 
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: ce;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $standard;
+        border-bottom: 1px solid $light-color;
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+
+        img {
+            width: $large * 4.5
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: $small;
+
+            img {
+                width: $large *2;
+            }
+
+            button {
+                @include cta-btn();
+            }
+        }
+    }
+
+    #feed {
+        margin: 0 auto;
+        margin-top: $large;
+
+        .card {
+            border: 1px solid $light-color;
+            border-radius: 3px;
+
+            .cardtop {
+                display: flex;
+                align-items: center;
+                gap: $standard;
+                margin-bottom: $small;
+
+                img {
+                    width: 64px;
+                }
+            }
+
+            .engagement {
+                background-color: $main-color;
+                padding: $small;
+                display: flex;
+                gap: $standard;
+
+                p {
+                    color: #fff;
+                }
+            }
+
+            .comments {
+                margin-top: $small;
+
+                .comment {
+                    display: flex;
+                    align-items: center;
+                    gap: $standard;
+                    margin: $small;
+                    border: 1px solid $light-color;
+
+                    img {
+                        width: 48px;
+                        margin: $small;
+                    }
+                }
+            }
+
+            .addComment {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    font-size: $standard;
+                    padding: $small;
+                    font-family: $standard-font;
+                    outline: none;
+                    border: 1px solid transparent;
+
+                    &:focus {
+                        border-bottom: 1px solid $main-color;
+                    }
+                }
+
+                button {
+                    margin-top: $small;
+                    @include cta-btn;
+                }
+            }
+        }
+    }
+}
+
 h1 {
     @include header-font();
+}
+
+p {
+    @include standard-font();
 }

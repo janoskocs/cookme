@@ -1,6 +1,30 @@
+//Mixins
+
 @mixin header-font() {
     font-family: $header-font;
     color: $main-color;
     font-size: $large*2;
+
+}
+
+@mixin standard-font() {
+    font-family: $standard-font;
+    font-size: $standard;
+    color: $secondary-color;
+}
+
+@mixin cta-btn() {
+    font-family: $standard-font;
+    font-size: $standard;
+    padding: $small;
+    background-color: $main-color;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+
+    &:hover {
+        background-color: $main-color*1.2;
+    }
 
 }
