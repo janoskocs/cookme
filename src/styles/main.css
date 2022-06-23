@@ -29,15 +29,21 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 1em;
-  border-bottom: 1px solid #9f9f9f;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #fff;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .container nav img {
-  width: 9em;
+  width: 4em;
 }
 
 .container nav section {
@@ -54,6 +60,7 @@
 }
 
 .container nav section img {
+  border-radius: 50%;
   width: 4em;
 }
 
@@ -94,6 +101,7 @@
 }
 
 .container #feed .card .cardtop img {
+  margin: 0.6em;
   width: 64px;
 }
 

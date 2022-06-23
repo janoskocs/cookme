@@ -7,7 +7,6 @@ function App() {
     <div className="container">
       <nav>
         <img src={logo} alt="Logo of CookMe"></img>
-        <h1>CookMe</h1>
         <section>
           <img src={profilePic} alt="Profile picture"></img>
           <p>Welcome, User</p>
@@ -46,7 +45,10 @@ function App() {
             <button>Add comment</button>
           </section>
         </section>
+
+
       </section>
+
     </div>
   );
 }
