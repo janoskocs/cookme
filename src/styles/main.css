@@ -13,9 +13,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: ce;
-      -ms-flex-align: ce;
-          align-items: ce;
 }
 
 .container nav {
