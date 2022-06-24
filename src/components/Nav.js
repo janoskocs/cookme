@@ -8,6 +8,7 @@ const Nav = () => {
         <nav>
             <img src={logo} alt="Logo of CookMe"></img>
             <ActiveUser />
+
         </nav>
     )
 }

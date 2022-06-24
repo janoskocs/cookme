@@ -14,6 +14,67 @@
     display: flex;
     flex-direction: column;
 
+    #login {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        height: 100vh;
+
+        .login-wrapper {
+            display: flex;
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+
+
+
+            .login-side {
+                width: 500px;
+                background-image: url('../img/cookmelogo500withtitle.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+
+            form {
+                border-radius: 0 16px 16px 0;
+                background-color: rgb(231, 249, 255);
+                padding: $large;
+
+                .login-inputs {
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        p {
+                            margin-top: $small;
+                        }
+
+                        input {
+                            margin-bottom: $small;
+                            padding: $small;
+                            font-family: $standard-font;
+                            font-size: $standard;
+
+                        }
+                    }
+                }
+
+                button {
+                    @include cta-btn();
+                    padding: $standard;
+
+                }
+            }
+        }
+    }
+
 
     nav {
         display: flex;
@@ -118,17 +179,18 @@
 
                 button {
                     margin-top: $small;
-                    @include cta-btn;
+                    @include cta-btn();
                 }
             }
         }
     }
-}
 
-h1 {
-    @include header-font();
-}
 
-p {
-    @include standard-font();
+    h1 {
+        @include header-font();
+    }
+
+    p {
+        @include standard-font();
+    }
 }

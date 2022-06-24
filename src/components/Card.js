@@ -6,7 +6,7 @@ import Comments from './Comments'
 import UserImg from './UserImg'
 import UserNameImg from './UserNameImg'
 import AddComment from './AddComment'
-const Card = () => {
+const Card = (post) => {
     return (
         <section className="card">
             <section className="cardtop">

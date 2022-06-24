@@ -15,6 +15,84 @@
           flex-direction: column;
 }
 
+.container #login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.container #login .login-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container #login .login-wrapper .login-side {
+  width: 500px;
+  background-image: url("../img/cookmelogo500withtitle.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.container #login .login-wrapper form {
+  border-radius: 0 16px 16px 0;
+  background-color: #e7f9ff;
+  padding: 2em;
+}
+
+.container #login .login-wrapper form .login-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container #login .login-wrapper form .login-inputs label p {
+  margin-top: 0.6em;
+}
+
+.container #login .login-wrapper form .login-inputs label input {
+  margin-bottom: 0.6em;
+  padding: 0.6em;
+  font-family: "Tahoma", sans-serif;
+  font-size: 1em;
+}
+
+.container #login .login-wrapper form button {
+  font-family: "Tahoma", sans-serif;
+  font-size: 1em;
+  padding: 0.6em;
+  background-color: #f584a9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 1em;
+}
+
+.container #login .login-wrapper form button:hover {
+  background-color: #ff9ecb;
+}
+
 .container nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,13 +252,13 @@
   background-color: #ff9ecb;
 }
 
-h1 {
+.container h1 {
   font-family: "Patrick Hand", cursive;
   color: #f584a9;
   font-size: 4em;
 }
 
-p {
+.container p {
   font-family: "Tahoma", sans-serif;
   font-size: 1em;
   color: #353535;

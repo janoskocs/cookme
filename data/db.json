@@ -3,7 +3,11 @@
         {
             "firstName": "Janos",
             "lastName": "Kocs",
+            "password": "",
             "id": 1,
+            "followers": [
+                "Angelika"
+            ],
             "posts": [
                 {
                     "postId": 1,
@@ -40,7 +44,11 @@
         {
             "firstName": "Angelika",
             "lastName": "Hegedus",
+            "password": "",
             "id": 2,
+            "followers": [
+                "Janos"
+            ],
             "posts": [
                 {
                     "postId": 1,
@@ -58,6 +66,45 @@
                     ]
                 }
             ]
+        },
+        {
+            "firstName": "John",
+            "lastName": "Smith",
+            "password": "",
+            "id": 3,
+            "followers": [
+                "Janos",
+                "Angelika"
+            ],
+            "posts": [
+                {
+                    "postId": 1,
+                    "date": "20/06/2022",
+                    "imgSrc": "https://source.unsplash.com/random/500x500",
+                    "likes": [
+                        "Janos"
+                    ],
+                    "comments": [
+                        {
+                            "firstName": "Janos",
+                            "id": 2,
+                            "comment": "Thanks for posting this!"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "firstName": "Diana",
+            "lastName": "P",
+            "password": "",
+            "id": 4,
+            "followers": [
+                "Janos",
+                "Angelika",
+                "John"
+            ],
+            "posts": []
         }
     ]
 }

@@ -4,7 +4,7 @@ const UserNameImg = () => {
     return (
         <>
             <img src={profilePic} alt="Profile picture"></img>
-            <p>Welcome, User</p>
+            <p>Welcome,</p>
         </>
     )
 }

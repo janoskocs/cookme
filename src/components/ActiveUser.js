@@ -5,6 +5,7 @@ const ActiveUser = () => {
     return (
         <section>
             <UserNameImg />
+
             <button>Log out</button>
         </section>
     )
