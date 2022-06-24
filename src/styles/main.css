@@ -7,4 +7,61 @@
   width: 80vw;
   margin: 0 auto;
 }
+
+.container p,
+.container a {
+  font-family: "Tahoma", sans-serif;
+  font-size: 1em;
+}
+
+.container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.6em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0 0 16px 16px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.6em;
+}
+
+.container nav .nav-links a {
+  text-decoration: none;
+  color: #353535;
+  border: 1px solid #353535;
+  padding: 0.6em;
+  border-radius: 4px;
+}
+
+.container nav .nav-links a:hover {
+  background-color: #f584a9;
+  color: #fff;
+  border: 1px solid transparent;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.container nav img {
+  width: 96px;
+}
 /*# sourceMappingURL=main.css.map */
