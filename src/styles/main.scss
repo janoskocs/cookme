@@ -17,6 +17,15 @@
         font-size: $standard;
     }
 
+    h1 {
+        @include header-font($large);
+    }
+
+    h2 {
+        @include header-font($large);
+    }
+
+
     nav {
         display: flex;
         justify-content: space-between;

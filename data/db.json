@@ -1,110 +1,22 @@
 {
-    "users": [
+    "blogs": [
         {
-            "firstName": "Janos",
-            "lastName": "Kocs",
-            "password": "",
-            "id": 1,
-            "followers": [
-                "Angelika"
-            ],
-            "posts": [
-                {
-                    "postId": 1,
-                    "date": "22/06/2022",
-                    "imgSrc": "https://source.unsplash.com/random/500x500",
-                    "likes": [
-                        "Angelika"
-                    ],
-                    "comments": [
-                        {
-                            "firstName": "Angelika",
-                            "id": 2,
-                            "comment": "This is awesome!"
-                        }
-                    ]
-                },
-                {
-                    "postId": 2,
-                    "date": "20/06/2022",
-                    "imgSrc": "https://source.unsplash.com/random/500x500",
-                    "likes": [
-                        "Angelika"
-                    ],
-                    "comments": [
-                        {
-                            "firstName": "Angelika",
-                            "id": 2,
-                            "comment": "This is great!"
-                        }
-                    ]
-                }
-            ]
+            "title": "First post",
+            "body": "first first first",
+            "author": "janos",
+            "id": 1
         },
         {
-            "firstName": "Angelika",
-            "lastName": "Hegedus",
-            "password": "",
-            "id": 2,
-            "followers": [
-                "Janos"
-            ],
-            "posts": [
-                {
-                    "postId": 1,
-                    "date": "20/06/2022",
-                    "imgSrc": "https://source.unsplash.com/random/500x500",
-                    "likes": [
-                        "Janos"
-                    ],
-                    "comments": [
-                        {
-                            "firstName": "Janos",
-                            "id": 2,
-                            "comment": "This is very cool!"
-                        }
-                    ]
-                }
-            ]
+            "title": "second post",
+            "body": "second second second first first",
+            "author": "maria",
+            "id": 2
         },
         {
-            "firstName": "John",
-            "lastName": "Smith",
-            "password": "",
-            "id": 3,
-            "followers": [
-                "Janos",
-                "Angelika"
-            ],
-            "posts": [
-                {
-                    "postId": 1,
-                    "date": "20/06/2022",
-                    "imgSrc": "https://source.unsplash.com/random/500x500",
-                    "likes": [
-                        "Janos"
-                    ],
-                    "comments": [
-                        {
-                            "firstName": "Janos",
-                            "id": 2,
-                            "comment": "Thanks for posting this!"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "firstName": "Diana",
-            "lastName": "P",
-            "password": "",
-            "id": 4,
-            "followers": [
-                "Janos",
-                "Angelika",
-                "John"
-            ],
-            "posts": []
+            "title": "third post",
+            "body": "third third second second second first first",
+            "author": "jason",
+            "id": 3
         }
     ]
 }
