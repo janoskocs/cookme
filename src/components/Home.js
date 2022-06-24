@@ -1,23 +1,16 @@
 import { useState, useEffect } from "react"
+import useFetch from "./useFetch"
 import BlogList from "./BlogList"
 const Home = () => {
 
-    const [blogs, setBlogs] = useState(null);
-
-    useEffect(() => {// can't use async here
-        fetch('http://localhost:8000/blogs').then(response => {
-            return response.json() //THis parses the response to javascript object. Because this is asynchronous, it will return another promise.
-        }).then(data => { //Need another .then to get the actual data from the response above
-            //This data contains the actual data
-            console.log(data)
-            setBlogs(data)//Update blog state with data received
-        })
-    }, []) //Pass empty array as 2nd argument to run useEffect once when components render
-
-
+    const { data: blogs, isPending, error } = useFetch('http://localhost:8000/blogs')
+    //Destructure the returned values from useFetch. Also, call data as blogs in this context
     return (
         <div className="content">
-            {/*Check if blogs is true and not null, then render blogs, otherwise if it's false it will not output bloglist component */blogs && <BlogList blogs={blogs} title="All blogs" />}
+            {error && <div>{error}</div>}
+            {isPending && <div>Loading... </div> /*if isPending is true (state) then show loading. The state is updated in useEffect after receiving the data from the server.*/}
+            {/*Check if blogs is true and not null, then render blogs, otherwise if it's false it will not output bloglist component */
+                blogs && <BlogList blogs={blogs} title="All blogs" />}
         </div>
     )
 }
