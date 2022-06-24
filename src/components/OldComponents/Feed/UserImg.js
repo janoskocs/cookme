@@ -1,5 +1,5 @@
 import React from 'react'
-import post1 from '../img/post1.jpg'
+import post1 from '../../img/post1.jpg'
 const UserImg = () => {
     return (
         <section className="imgPost">

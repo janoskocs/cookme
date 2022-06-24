@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from '../img/cookmelogo500.png'
-import ActiveUser from './ActiveUser'
+import logo from '../../img/cookmelogo500.png'
+import ActiveUser from '../Feed/ActiveUser'
 
 
 const Nav = () => {
