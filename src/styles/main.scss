@@ -49,6 +49,7 @@
                 text-decoration: none;
                 color: $secondary-color;
                 padding: $small;
+                border-radius: 16px;
 
                 &:hover {
                     background-color: $main-color;
@@ -64,4 +65,38 @@
         }
     }
 
+    #hero {
+        height: 924px;
+        width: 100%;
+        background: url('../img/hero.png');
+        border-radius: 16px;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+
+        #hero-cta {
+            margin-left: $large;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                font-size: $large*1.5;
+            }
+
+            a {
+                font-size: $standard;
+                text-decoration: none;
+                background-color: $secondary-color;
+                color: #fff;
+                border-radius: 16px;
+                padding: $standard;
+
+                &:hover {
+                    background-color: $secondary-color*1.5;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+    }
 }

@@ -7,14 +7,19 @@ import {
 } from "react-router-dom";
 const Nav = () => {
     return (
-        <nav>
-            <img src={logo} alt="Logo of CookMe" />
-            <div className="nav-links">
-                <Link to='/'>Home</Link>
-                <Link to='/create'>Create</Link>
-                <Link to='/about'>About</Link>
-            </div>
-        </nav>
+        <>
+            <nav>
+                <img src={logo} alt="Logo of CookMe" />
+                <h1>CookMe</h1>
+                <div className="nav-links">
+                    <Link to='/'>Home</Link>
+                    <Link to='/create'>Create</Link>
+                    <Link to='/about'>About</Link>
+                </div>
+            </nav>
+
+        </>
+
     )
 }
 

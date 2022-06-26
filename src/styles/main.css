@@ -16,13 +16,13 @@
 
 .container h1 {
   font-family: "Purple Purse", cursive;
-  color: #333366;
+  color: #66cc66;
   font-size: 2em;
 }
 
 .container h2 {
   font-family: "Purple Purse", cursive;
-  color: #333366;
+  color: #66cc66;
   font-size: 2em;
 }
 
@@ -61,10 +61,11 @@
   text-decoration: none;
   color: #ff6666;
   padding: 0.6em;
+  border-radius: 16px;
 }
 
 .container nav .nav-links a:hover {
-  background-color: #333366;
+  background-color: #66cc66;
   color: #fff;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -72,5 +73,52 @@
 
 .container nav img {
   width: 64px;
+}
+
+.container #hero {
+  height: 924px;
+  width: 100%;
+  background: url("../img/hero.png");
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container #hero #hero-cta {
+  margin-left: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container #hero #hero-cta h2 {
+  font-size: 3em;
+}
+
+.container #hero #hero-cta a {
+  font-size: 1em;
+  text-decoration: none;
+  background-color: #ff6666;
+  color: #fff;
+  border-radius: 16px;
+  padding: 1em;
+}
+
+.container #hero #hero-cta a:hover {
+  background-color: #ff9999;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 /*# sourceMappingURL=main.css.map */
