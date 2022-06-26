@@ -25,6 +25,19 @@
         @include header-font($large);
     }
 
+    .section-title {
+        padding: $standard;
+        text-align: center;
+    }
+
+    .section-description {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: $paragraph-color*2;
+        padding-bottom: $standard;
+        border-bottom: 1px solid $paragraph-color*4;
+    }
 
     nav {
         display: flex;
@@ -96,6 +109,29 @@
                     background-color: $secondary-color*1.5;
                     transition: 0.3s ease-in-out;
                 }
+            }
+        }
+    }
+
+    #recipe-list {
+        margin-top: $large;
+        border-top: 1px solid $paragraph-color*4;
+
+        .recipe-preview {
+            margin: $standard;
+            padding: $standard;
+            border-bottom: 1px solid $paragraph-color*4;
+
+            a {
+                text-decoration: none;
+                color: $paragraph-color;
+            }
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                transition: 0.1s ease-in-out;
             }
         }
     }

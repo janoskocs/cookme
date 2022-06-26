@@ -9,7 +9,7 @@ const Nav = () => {
     return (
         <>
             <nav>
-                <img src={logo} alt="Logo of CookMe" />
+                <Link to='/'><img src={logo} alt="Logo of CookMe" /></Link>
                 <h1>CookMe</h1>
                 <div className="nav-links">
                     <Link to='/'>Home</Link>
