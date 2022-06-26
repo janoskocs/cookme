@@ -135,4 +135,51 @@
             }
         }
     }
+
+    #create-blog {
+
+
+        form {
+            margin: 0 auto;
+            max-width: 50%;
+            padding: $large;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            label {
+                @include standard-font();
+                margin: $standard 0 $standard 0;
+            }
+
+            .input-name-title,
+            textarea {
+                padding: $standard;
+                font-size: $standard;
+                font-family: $standard-font;
+
+                &:focus {
+                    border: 1px solid $main-color;
+                }
+            }
+
+            button {
+                padding: $standard;
+                background-color: $main-color;
+                border-radius: 16px;
+                border: none;
+                font-family: $standard-font;
+                font-size: $standard;
+                color: #fff;
+                margin: $standard 0 $standard 0;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $main-color*1.1;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+
+        }
+    }
 }

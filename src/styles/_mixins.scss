@@ -9,7 +9,7 @@
 @mixin standard-font() {
     font-family: $standard-font;
     font-size: $standard;
-    color: $secondary-color;
+    color: $paragraph-color*2;
 }
 
 @mixin cta-btn() {

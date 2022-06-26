@@ -160,4 +160,57 @@
   -webkit-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
 }
+
+.container #create-blog form {
+  margin: 0 auto;
+  max-width: 50%;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container #create-blog form label {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1em;
+  color: #6a6a6a;
+  margin: 1em 0 1em 0;
+}
+
+.container #create-blog form .input-name-title,
+.container #create-blog form textarea {
+  padding: 1em;
+  font-size: 1em;
+  font-family: "Epilogue", sans-serif;
+}
+
+.container #create-blog form .input-name-title:focus,
+.container #create-blog form textarea:focus {
+  border: 1px solid #66cc66;
+}
+
+.container #create-blog form button {
+  padding: 1em;
+  background-color: #66cc66;
+  border-radius: 16px;
+  border: none;
+  font-family: "Epilogue", sans-serif;
+  font-size: 1em;
+  color: #fff;
+  margin: 1em 0 1em 0;
+  cursor: pointer;
+}
+
+.container #create-blog form button:hover {
+  background-color: #70e070;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
 /*# sourceMappingURL=main.css.map */

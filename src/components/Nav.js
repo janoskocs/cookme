@@ -13,7 +13,7 @@ const Nav = () => {
                 <h1>CookMe</h1>
                 <div className="nav-links">
                     <Link to='/'>Home</Link>
-                    <Link to='/create'>Create</Link>
+                    <Link to='/create'>Share your recipe</Link>
                     <Link to='/about'>About</Link>
                 </div>
             </nav>

@@ -24,26 +24,29 @@ const Create = () => {
     }
 
     return (
-        <div className="create-blog">
-            <h2>Add new blog</h2>
+        <div id="create-blog">
+            <h2 className="section-title">Check out our latest selection of great dishes</h2>
+            <p className="section-description">Community selected recipes will let you explore exotic tastes and connect with different cultures accross the world.</p>
             <form onSubmit={handleSubtmit}>
-                <label>Blog title</label>
+                <label>Recipe name:</label>
                 <input
+                    className="input-name-title"
                     type="text"
                     required
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
                 />
-                <label>Blog body:</label>
+                <label>Recipe steps</label>
                 <textarea required value={body} onChange={(e) => setBody(e.target.value)}></textarea>
-                <label>Blog author:</label>
+                <label>May I take your name?</label>
                 <input
+                    className="input-name-title"
                     type="text"
                     required
                     value={author} onChange={(e) => setAuthor(e.target.value)}
                 />
-                {!isPending && <button>Add blog</button>}
-                {isPending && <button disabled>Adding blog</button>}
+                {!isPending && <button>Share recipe</button>}
+                {isPending && <button disabled>Share recipe</button>}
             </form>
         </div>
     )
