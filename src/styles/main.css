@@ -10,19 +10,19 @@
 
 .container p,
 .container a {
-  font-family: "Tahoma", sans-serif;
+  font-family: "Epilogue", sans-serif;
   font-size: 1em;
 }
 
 .container h1 {
-  font-family: "Patrick Hand", cursive;
-  color: #f584a9;
+  font-family: "Purple Purse", cursive;
+  color: #333366;
   font-size: 2em;
 }
 
 .container h2 {
-  font-family: "Patrick Hand", cursive;
-  color: #f584a9;
+  font-family: "Purple Purse", cursive;
+  color: #333366;
   font-size: 2em;
 }
 
@@ -36,7 +36,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.6em;
+  padding: 0.3em;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -59,21 +59,18 @@
 
 .container nav .nav-links a {
   text-decoration: none;
-  color: #353535;
-  border: 1px solid #353535;
+  color: #ff6666;
   padding: 0.6em;
-  border-radius: 4px;
 }
 
 .container nav .nav-links a:hover {
-  background-color: #f584a9;
+  background-color: #333366;
   color: #fff;
-  border: 1px solid transparent;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
 .container nav img {
-  width: 96px;
+  width: 64px;
 }
 /*# sourceMappingURL=main.css.map */

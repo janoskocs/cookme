@@ -3,8 +3,10 @@ import Home from './components/Home';
 import Create from './components/Create';
 import About from './components/About';
 import BlogDetails from './components/BlogDetails';
+import NotFound from './components/NotFound';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import './styles/main.css';
+
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
           <Route path="/create" element={<Create />} />
           <Route path="/about" element={<About />} />
           <Route path="/blogs/:id" element={<BlogDetails />} /> {/*Router params*/}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
     </div>

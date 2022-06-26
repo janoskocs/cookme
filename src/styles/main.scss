@@ -30,7 +30,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: $small;
+        padding: $small/2;
         position: sticky;
         top: 0;
         /* From https://css.glass */
@@ -48,22 +48,19 @@
             a {
                 text-decoration: none;
                 color: $secondary-color;
-                border: 1px solid $secondary-color;
                 padding: $small;
-                border-radius: 4px;
-
 
                 &:hover {
                     background-color: $main-color;
                     color: #fff;
-                    border: 1px solid transparent;
                     transition: 0.3s ease;
                 }
             }
         }
 
         img {
-            width: 96px;
+            width: 64px;
+
         }
     }
 
