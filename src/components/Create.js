@@ -25,8 +25,8 @@ const Create = () => {
 
     return (
         <div id="create-blog">
-            <h2 className="section-title">Check out our latest selection of great dishes</h2>
-            <p className="section-description">Community selected recipes will let you explore exotic tastes and connect with different cultures accross the world.</p>
+            <h2 className="section-title">Share your recipe with the world</h2>
+            <p className="section-description">Your recipe will help thousands of people that aren't sure what to cook for dinner.</p>
             <form onSubmit={handleSubtmit}>
                 <label>Recipe name:</label>
                 <input

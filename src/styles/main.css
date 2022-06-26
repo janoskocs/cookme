@@ -213,4 +213,20 @@
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
+
+.container #recipe {
+  margin: 2em;
+}
+
+.container #recipe h2 {
+  text-align: center;
+}
+
+.container #recipe .author {
+  text-align: center;
+}
+
+.container #recipe p {
+  margin-top: 2em;
+}
 /*# sourceMappingURL=main.css.map */

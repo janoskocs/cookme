@@ -182,4 +182,20 @@
 
         }
     }
+
+    #recipe {
+        margin: $large;
+
+        h2 {
+            text-align: center;
+        }
+
+        .author {
+            text-align: center;
+        }
+
+        p {
+            margin-top: $large;
+        }
+    }
 }
