@@ -8,9 +8,10 @@ const Create = () => {
     const [isPending, setIsPending] = useState(false)
     const navigate = useNavigate();
 
-    const handleSubtmit = (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        const blog = { title, body, author }
+        const likes = 0;
+        const blog = { title, body, author, likes }
         setIsPending(true) //Create a blog object from the states
         fetch('http://localhost:8000/blogs', { //Pass in the url, 2nd argument is an object
             method: 'POST',//Specift method
@@ -27,7 +28,7 @@ const Create = () => {
         <div id="create-blog">
             <h2 className="section-title">Share your recipe with the world</h2>
             <p className="section-description">Your recipe will help thousands of people that aren't sure what to cook for dinner.</p>
-            <form onSubmit={handleSubtmit}>
+            <form onSubmit={handleSubmit}>
                 <label>Recipe name:</label>
                 <input
                     className="input-name-title"

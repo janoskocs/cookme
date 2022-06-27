@@ -1,18 +1,11 @@
 {
   "blogs": [
     {
-      "title": "dfdsfd sfds",
-      "body": "fdsfdasfsd",
-      "author": "fsdfsadfsad",
-      "likes": 0,
-      "id": 16
-    },
-    {
-      "title": "fsdfdsfsdfds",
-      "body": "f dsfdsfsd",
-      "author": "fsd fdsfds",
-      "likes": 0,
-      "id": 17
+      "title": "Omlette",
+      "body": "Mix eggs\nFry Eggs",
+      "author": "Mr Egg",
+      "likes": 3,
+      "id": 1
     }
   ]
 }

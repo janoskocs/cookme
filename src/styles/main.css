@@ -241,6 +241,28 @@
   margin-top: 2em;
 }
 
+.container #recipe button {
+  padding: 1em;
+  background-color: #66cc66;
+  border-radius: 16px;
+  border: none;
+  font-family: "Epilogue", sans-serif;
+  font-size: 1em;
+  color: #fff;
+  margin: 1em 0 1em 0;
+  cursor: pointer;
+}
+
+.container #recipe button:hover {
+  background-color: #70e070;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.container #recipe button:disabled {
+  background-color: #353535;
+}
+
 .container footer {
   background-color: #ff6666;
   padding: 2em;

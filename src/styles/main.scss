@@ -201,6 +201,27 @@
         p {
             margin-top: $large;
         }
+
+        button {
+            padding: $standard;
+            background-color: $main-color;
+            border-radius: 16px;
+            border: none;
+            font-family: $standard-font;
+            font-size: $standard;
+            color: #fff;
+            margin: $standard 0 $standard 0;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $main-color*1.1;
+                transition: 0.3s ease-in-out;
+            }
+
+            &:disabled {
+                background-color: $paragraph-color;
+            }
+        }
     }
 
     footer {
