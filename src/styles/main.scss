@@ -10,6 +10,10 @@
 .container {
     width: 80vw;
     margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     p,
     a {
@@ -196,6 +200,18 @@
 
         p {
             margin-top: $large;
+        }
+    }
+
+    footer {
+        background-color: $secondary-color;
+        padding: $large;
+
+        border-radius: 16px 16px 0 0;
+
+        p.section-description {
+            border: none !important;
+            color: #fff !important;
         }
     }
 }

@@ -6,6 +6,7 @@ import BlogDetails from './components/BlogDetails';
 import NotFound from './components/NotFound';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import './styles/main.css';
+import Footer from './components/Footer';
 
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/blogs/:id" element={<BlogDetails />} /> {/*Router params*/}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

@@ -1,10 +1,13 @@
 import useFetch from './useFetch';
 import { useParams } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 const BlogDetails = () => {
 
     const { id } = useParams();// get the id param from router
     const { data: blog, error, isPending } = useFetch('http://localhost:8000/blogs/' + id)//reuse custom hook to fetch blogpost
+
+    const [vote, setVote] = useState(null)
     const navigate = useNavigate()
     const handleClick = () => {
         fetch('http://localhost:8000/blogs/' + blog.id, {
