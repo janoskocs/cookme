@@ -1,10 +1,10 @@
 {
   "blogs": [
     {
-      "title": "Omlette",
-      "body": "Mix eggs\nFry Eggs",
-      "author": "Mr Egg",
-      "likes": 3,
+      "title": "Pasta",
+      "body": "Add water in a pot, add oil, add salt. Wait until water boils and add pasta. Cook for 8 minutes.",
+      "author": "Mr Pasta",
+      "likes": 1,
       "id": 1
     }
   ]

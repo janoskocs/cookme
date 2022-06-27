@@ -46,7 +46,7 @@ const BlogDetails = () => {
                     <p className="author">Written by {blog.author}</p>
                     <p>{blog.body}</p>
                     <p>This recipe received {blog.likes + likes} likes.</p>
-                    <button onClick={handleClick}>Delete</button>
+                    {false && <button onClick={handleClick}>Delete</button>}
                     {!likeStatus && <button onClick={handleLike}>Like</button>}
                     {likeStatus && <button disabled onClick={handleLike}>Thanks for liking!</button>}
                 </article>
