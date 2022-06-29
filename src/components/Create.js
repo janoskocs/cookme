@@ -9,19 +9,22 @@ const Create = () => {
     const navigate = useNavigate();
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-        const likes = 0;
-        const blog = { title, body, author, likes }
+        e.preventDefault()
+        const likes = 0
+        const id = 2
+        const blog = { title, body, author, likes, id }
         setIsPending(true) //Create a blog object from the states
-        fetch('http://localhost:8000/blogs', { //Pass in the url, 2nd argument is an object
-            method: 'POST',//Specift method
-            headers: { "Content-Type": "application/json" },//Specify what you are sending to the server which is json
-            body: JSON.stringify(blog)//The actual object that we are sending, but first we need to convert it to a json string
-        }).then(() => {
-            console.log('new blog added.')//Once it is completes, returns a promise
-            setIsPending(false)
-            navigate('/')//Once new blog is added, redirect to home page
-        })
+        // fetch('http://localhost:8000/blogs', { //Pass in the url, 2nd argument is an object
+        //     method: 'POST',//Specift method
+        //     headers: { "Content-Type": "application/json" },//Specify what you are sending to the server which is json
+        //     body: JSON.stringify(blog)//The actual object that we are sending, but first we need to convert it to a json string
+        // }).then(() => {
+        //     console.log('new blog added.')//Once it is completes, returns a promise
+        //     setIsPending(false)
+        //     navigate('/')//Once new blog is added, redirect to home page
+        // })
+
+
     }
 
     return (

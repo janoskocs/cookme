@@ -8,7 +8,7 @@ const BlogList = ({ blogs }) => {
             <p className="section-description">Community selected recipes will let you explore exotic tastes and connect with different cultures accross the world.</p>
             {blogs.map((blog) => (
                 <div className="recipe-preview" key={blog.id}>
-                    <Link to={`/blogs/${blog.id}`}> {/* Create link dynamically based on the current blog that's clicked on*/}
+                    <Link to={`/blogs/${blog.id}`} state={{ from: blogs[blog.id]  /* Pass the blogs state to blog list using link router*/ }}> {/* Create link dynamically based on the current blog that's clicked on*/}
                         <h2> {blog.title}</h2>
                         <p>Written by {blog.author}</p>
                     </Link>
